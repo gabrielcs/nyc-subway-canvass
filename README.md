@@ -2,7 +2,7 @@
 Recommender for best NYC subway stations to canvass to raise awareness about women in tech.
 
 ## Introduction
-This is an open-ended project for the Data Science program at [K2 Data Science](http://k2datascience.com). An assignment was previously done regarding the turnstile data from the MTA website. That assignment can be found under the [mta-assignment folder](mta-assignment/) for reference.
+This is an open-ended project for the Data Science program at [K2 Data Science](http://k2datascience.com). An assignment was previously done regarding the turnstile dataset available on the MTA website. That assignment can be found under the [mta-assignment folder](mta-assignment/) for reference.
 
 A minimum valuable product (MVP) of this research was conducted using the [MTA turnstile dataset](http://web.mta.info/developers/turnstile.html) and its findings can be found on the [MVP page](MVP.md).
 
@@ -12,10 +12,10 @@ A non-profit organization is trying to raise awareness about women in technology
 ## Assumptions
 We have figured out that to improve the number of women in tech our audience had to be taken into account. Besides studies showing that young people can be more open-minded and receptive to new ideas, high school students are the main group of people who is about to choose a career path in the near future.
 
-We found out that NYC has the biggest subway in the world by number of stations. The MTA dataset alone has over 300 stations and that meant that successfully filtering out at least 90% of stations and making a good recommendation had the potential to either make this canvassing project fail or succeed.
+We found out that NYC has the biggest subway system in the world by number of stations. The MTA dataset alone has over 300 stations and that means that successfully filtering out at least 90% of stations and making a good recommendation had the potential to either make this canvassing project fail or succeed.
 
 ## Approach
-We started by researching open data about high schools in NYC and found the [Department of Education's 2017 dataset on high schools](https://data.cityofnewyork.us/Education/DOE-High-School-Directory-2017/s3k6-pzi2). It seemed to have all data we needed, including the number of students per school, whether they are boys- or girls-only or "hybrid", and their location. A more detailed description of the dataset can be found on this [spreadsheet](https://data.cityofnewyork.us/api/views/s3k6-pzi2/files/b90d8c6e-9dd9-4af1-b6a7-9ba84b3bfc5c?download=true&filename=doe_hsdirectory_data_dictionary_2017.xlsx).
+We started by researching open data about high schools in NYC and found the [Department of Education's 2017 dataset on high schools](https://data.cityofnewyork.us/Education/DOE-High-School-Directory-2017/s3k6-pzi2). It seemed to have all data we needed, including the number of students per school, whether they are boys- or girls-only or "hybrid", and their location. A more detailed description of the dataset can be found on this [spreadsheet](data/doe_hsdirectory_data_dictionary_2017.xlsx).
 
 The next step was search for an open dataset that included the location of NYC subway stations so we could match them with the high schools. We then found this other [dataset](https://data.cityofnewyork.us/Transportation/Subway-Stations/arq3-7z49) provided by MTA. All we had to do then was to clean both datasets and further join them with the MTA dataset we used in the MVP to build the recommendation.
 
@@ -36,9 +36,9 @@ Having all data from February weekdays segmented by station, we then calculated 
 ### DOE High School Directory dataset
 *Please refer to the [high-schools-cleaning-exploration.ipynb](high-schools-cleaning-exploration.ipynb) Jupyter notebook.*
 
-We started by filtering out girl-only schools. Our goal is to improve the number of women in tech and therefore talking to male students wouldn't be of much help.
+We started by filtering out girls-only schools. Our goal is to improve the number of women in tech and therefore talking to male students wouldn't be of much help.
 
-We then noticed that there were 5 columns on "academic opportunities", 10 columns on "programs", and 10 more columns on "interests", and that in each of these areas some schools had something that was tech-related. We have then done some basic natural language processing (NLP) to find whether we could find the words 'technology', 'computer', 'web', 'programming' or 'coding' in any of those areas and figured out that about 46% of the high schools had either tech-related academic opportunities, programs or interest. We called that tech-inclination and filtered out the remaining high-schools that did not have it. Our assumption here was that 200 high schools were enough and that it could help the canvassing team if they were talking to female students from schools that actually had some tech-inclination.
+We then noticed that there were 5 columns on "academic opportunities", 10 columns on "programs", and 10 more columns on "interests", and that in each of these areas some schools had something that was tech-related. We have then done some basic natural language processing (NLP) to find whether we could find the words 'technology', 'computer', 'web', 'programming' or 'coding' in any of those areas and figured out that about 46% of the high schools had either tech-related academic opportunities, programs or interest. We called that "tech-inclination" and filtered out the remaining high-schools that did not have it. Our assumption here was that 200 high schools were enough and that it could help the canvassing team if they were talking to female students from schools that actually had some tech-inclination.
 
 The next step was to explore the column `graduation_rate`, which is defined as "at the end of the 2014-15 school year, the percent of students who graduated "on time" by earning a diploma four years after they entered 9th grade". We could multiply that by the total number of students in each school and calculate the potential number of college schools each school has. However, we figured that 14% of schools didn't have figures on the graduation rate. We then plotted its distribution to help decide if we should either ignore the column or the schools without that data:
 
@@ -95,7 +95,7 @@ Follows an excerpt of the final recommendation:
 
 What we would have done further if we had more time:
 
-1. Use an API to calculate walking duration instead of the Haversine formula. Maybe the [Google Maps Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix).
+1. Use an API to calculate the walking duration instead of the Haversine formula. Maybe [Google Maps Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix).
 
 2. Calculate a station factor that combines distance to the school, number of entries at station, and the school's potential college students.
 
