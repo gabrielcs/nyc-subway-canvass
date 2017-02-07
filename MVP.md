@@ -9,7 +9,7 @@ We examined the turnstile dataset available on the [MTA website](http://web.mta.
 
 To account for seasonality, we have refined the research question to plan for the canvass to be realized in February 2017. We have then decided to use the MTA data from February 2016 and have also filtered out all data related to weekends or NYC holidays. Our focus was only on entries data, having ignored exits.
 
-We have also planned to filter out data from 8pm to 8am but found out that each turnstile had data being recorded in different timing. Most of them had data recorded in 4-hour intervals but some of them started at 8am, while others at 7am or at 7:30 am. To make it harder, some of them had seemingly random timestamps. To avoid having misleading data I have decided not to filter data based on the time of the day.
+We have also planned to filter out data from 8pm to 8am but found out that each turnstile had data being recorded in different timing. Most of them had data recorded in 4-hour intervals but some of them started at 8am, while others at 7am or at 7:30 am. To make it harder, some of them had seemingly random timestamps. To avoid having misleading data we have decided not to filter data based on the time of the day.
 
 Having all data from February weekdays segmented by station, we then calculated the average daily entries for each station and selected the top 30 stations with the highest traffic. Here is the result:
 
