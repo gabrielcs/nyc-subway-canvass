@@ -19,6 +19,8 @@ We started by researching open data about high schools in NYC and found the [Dep
 
 The next step was search for an open dataset that included the location of NYC subway stations so we could match them with the high schools. We then found this other [dataset](https://data.cityofnewyork.us/Transportation/Subway-Stations/arq3-7z49) provided by MTA. All we had to do then was to clean both datasets and further join them with the MTA dataset we used in the MVP to build the recommendation.
 
+Both datasets are hosted on the [NYC Open Data website](https://data.cityofnewyork.us) and so we believe that to be a good source of datasets when it comes to New York City.
+
 ## Cleaning and Exploring the Data
 Each of the 3 datasets used in this project were cleaned and explored in a separate [Jupyter notebook](http://jupyter.org). The resulting [Pandas](http://pandas.pydata.org) [DataFrames](http://pandas.pydata.org/pandas-docs/stable/dsintro.html#dataframe) were saved as binary pickle files that were then loaded and matched together in the [recommender.ipynb](recommender.ipynb) notebook.
 
@@ -55,7 +57,7 @@ Since the dataset also has data on bus and subway lines we also filtered out sch
 The final step was to do some basic NLP and extract the latitude and longitude coordinates from the schools `location` column. That was necessary to later calculate the distances between schools and stations.
 
 ### MTA Subway Stations dataset
-*Please refer to the [stations-location-cleaning](stations-location-cleaning) Jupyter notebook.*
+*Please refer to the [stations-location-cleaning.ipynb](stations-location-cleaning) Jupyter notebook.*
 
 After some initial exploration, we noticed this dataset contained an entry for each station entrance. In other words, each station could contain multiple entries in the dataset.
 
@@ -73,7 +75,7 @@ Next, we set out to find which stations were within walking distance from each s
 Finally, we have filtered out stations with fewer than 4000 average daily entries and selected a maximum of 5 stations per high school. We have sorted the dataset first by the potential college students of each school and then by the average number of daily traffic for each station. The final recommendation has 29 stations and also includes data like start and end time for each school, as well as the city in which the school/station is located.
 
 ## Final Recommendation
-Follows an excerpt of the final recommendation:
+The final recommendation consists of 29 stations. Here are the top 13:
 
 | School Name | Potential College Students | Start Time | End Time | Station Name | Avg. Daily Traffic Feb. | City |
 | --- | --- | --- | --- | --- | --- | --- |
