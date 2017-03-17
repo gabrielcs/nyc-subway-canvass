@@ -11,9 +11,13 @@ To account for seasonality, we have refined the research question to plan for th
 
 We have also planned to filter out data from 8pm to 8am but found out that each turnstile had data being recorded in different timing. Most of them had data recorded in 4-hour intervals but some of them started at 8am, while others at 7am or at 7:30 am. To make it harder, some of them had seemingly random timestamps. To avoid having misleading data we have decided not to filter data based on the time of the day.
 
-Having all data from February weekdays segmented by station, we then calculated the average daily entries for each station and selected the top 30 stations with the highest traffic. Here is the result:
+Having all data from February weekdays segmented by station, we then calculated the average daily entries for each station. Since the difference between stations was relatively high we used the logarithmic scale:
 
-![Top 30 NYC Subway Statopms by Traffic in February Weekdays](figures/mvp.png)
+![Distribution of ridership among NYC Subway Stations](figures/log.png)
+
+Finally, we selected the top 30 stations with the highest traffic. Here is the result:
+
+![Top 30 NYC Subway Stations by Traffic in February Weekdays](figures/mvp.png)
 
 ### Initial Research Findings
 
