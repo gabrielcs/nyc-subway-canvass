@@ -87,7 +87,7 @@ All we had to do was to filter the latitude and longitude from the `location` co
 
 We also plotted the stations coordinates to have a feel for their geographical location:
 
-[![All Stations Entrances](figures/all_entrances.png)](maps/all_entrances.html)
+[![All Stations Entrances](figures/all_entrances.png)](https://cdn.rawgit.com/gabrielcs/nyc-subway-canvass/master/maps/all_entrances.html)
 
 ## Finding Target Stations
 *Please refer to the [recommender.ipynb](recommender.ipynb) Jupyter notebook.*
@@ -96,7 +96,7 @@ Since we started with 3 DataFrames that were already cleaned and explored in oth
 
 We started by getting a visual for the joined geographical distributions of both schools and stations. We quickly noticed there were a couple of schools with no nearby stations. That warned us our algorithm would have to take that into account.
 
-[![Geographical distribution of schools and stations](figures/all_stations_schools.png)](maps/all_stations_schools.html)
+[![Geographical distribution of schools and stations](figures/all_stations_schools.png)](https://cdn.rawgit.com/gabrielcs/nyc-subway-canvass/master/maps/all_stations_schools.html)
 
 Next, we had to face the challenge that the stations names were different in each of the 2 subway datasets. To solve that we did some basic NLP to match those names programmatically where it was easy to do so and "manually" by the use of a Python map otherwise. The result was a stations DataFrame with both the average daily traffic for February and the coordinates for each station entrance.
 
@@ -104,7 +104,7 @@ Next, we set out to find which stations were within walking distance from each s
 
 Finally, we have filtered out stations with fewer than 4000 average daily entries and selected a maximum of 5 stations per high school. Here is a glimpse of the distribution of the coordinates of the selected schools and stations.
 
-[![Geographical distribution of selected schools and stations](figures/selected_schools_stations.png)](figures/selected_schools_stations.html)
+[![Geographical distribution of selected schools and stations](figures/selected_schools_stations.png)](https://cdn.rawgit.com/gabrielcs/nyc-subway-canvass/master/maps/selected_schools_stations.html)
 
 For the final recommendation we have sorted the dataset first by the potential college students of each school and then by the average number of daily traffic for each station. It has 29 stations and also includes data like start and end time for each school, as well as the city in which the school/station is located.
 
