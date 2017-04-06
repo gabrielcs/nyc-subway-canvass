@@ -2,7 +2,7 @@
 Recommender for best NYC subway stations to canvass to raise awareness about women in tech.
 
 ## Introduction
-This is an open-ended project for the Data Science program at [K2 Data Science](http://k2datascience.com). An assignment was previously done regarding the turnstile dataset available on the MTA website. That assignment can be found under the [mta-assignment folder](mta-assignment/) for reference.
+This is an open-ended Exploratory Data Analysis project for the Data Science program at [K2 Data Science](http://k2datascience.com). An assignment was previously done regarding the turnstile dataset available on the MTA website. That assignment can be found under the [mta-assignment folder](mta-assignment/) for reference.
 
 A minimum valuable product (MVP) of this research was conducted using the [MTA turnstile dataset](http://web.mta.info/developers/turnstile.html) and its findings can be found on the [MVP page](MVP.md).
 
@@ -94,7 +94,7 @@ We also plotted the stations coordinates to have a feel for their geographical l
 
 Since we started with 3 DataFrames that were already cleaned and explored in other notebooks, our task here was to join those data sources in order to make recommendations.
 
-We started by getting a visual for the joined geographical distributions of both schools and stations. We quickly noticed there were a couple of schools with no nearby stations. That warned us our algorithm would have to take that into account.
+We started by getting a visual for the joined geographical distributions of both schools and stations (station entrances are red circles, schools are blue diamonds). We quickly noticed there were a couple of schools with no nearby stations. That warned us our algorithm would have to take that into account.
 
 [![Geographical distribution of schools and stations](figures/all_stations_schools.png)](https://cdn.rawgit.com/gabrielcs/nyc-subway-canvass/master/maps/all_stations_schools.html)
 
@@ -102,7 +102,7 @@ Next, we had to face the challenge that the stations names were different in eac
 
 Next, we set out to find which stations were within walking distance from each school. Since we had their latitude and longitude coordinates, we decided to use the [Haversine formula](https://en.wikipedia.org/wiki/Haversine_formula) and check whether they were within 810 meters from each other (a heuristic for 10-15 minutes walking).
 
-Finally, we have filtered out stations with fewer than 4000 average daily entries and selected a maximum of 5 stations per high school. Here is a glimpse of the distribution of the coordinates of the selected schools and stations.
+Finally, we have filtered out stations with fewer than 4000 average daily entries and selected a maximum of 5 stations per high school. Here is a glimpse of the distribution of the coordinates of the selected schools and stations (station entrances are red circles, schools are blue diamonds).
 
 [![Geographical distribution of selected schools and stations](figures/selected_schools_stations.png)](https://cdn.rawgit.com/gabrielcs/nyc-subway-canvass/master/maps/selected_schools_stations.html)
 
