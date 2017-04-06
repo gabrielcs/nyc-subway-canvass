@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_6a64fffc47184dd393cd000c0313ebb8 {
+                position : relative;
+                width : 60.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6a64fffc47184dd393cd000c0313ebb8" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_6a64fffc47184dd393cd000c0313ebb8 = L.map(
+                                  'map_6a64fffc47184dd393cd000c0313ebb8',
+                                  {center: [40.72,-73.92],
+                                  zoom: 11,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_971fbf9cb4354cd4a0b66b6d2cdb304c = L.tileLayer(
+                'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: '(c) <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (c) <a href="http://cartodb.com/attributions">CartoDB</a>, CartoDB <a href ="http://cartodb.com/attributions">attributions</a>',
+                    detectRetina: false
+                    }
+                ).addTo(map_6a64fffc47184dd393cd000c0313ebb8);
+
+        
+    
+            var regular_polygon_marker_9529d6bdf53e4bc19824a5fb791fb2e0 = new L.RegularPolygonMarker(
+                new L.LatLng(40.688896,-73.976435),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_6a64fffc47184dd393cd000c0313ebb8);
+            
+    
+            var popup_07e4add8ae77414186f7a2fc681a0157 = L.popup({maxWidth: '300'});
+
+            
+                var html_613b64db0e4843d68e9d36d5bf87c11e = $('<div id="html_613b64db0e4843d68e9d36d5bf87c11e" style="width: 100.0%; height: 100.0%;">Brooklyn Technical High School</div>')[0];
+                popup_07e4add8ae77414186f7a2fc681a0157.setContent(html_613b64db0e4843d68e9d36d5bf87c11e);
+            
+
+            regular_polygon_marker_9529d6bdf53e4bc19824a5fb791fb2e0.bindPopup(popup_07e4add8ae77414186f7a2fc681a0157);
+
+            
+        
+    
+            var regular_polygon_marker_3cfbda2a9d2c45878915c2d46498942a = new L.RegularPolygonMarker(
+                new L.LatLng(40.632829,-73.952356),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_6a64fffc47184dd393cd000c0313ebb8);
+            
+    
+            var popup_1d7d59d988a441fcb764e4a9de5def5d = L.popup({maxWidth: '300'});
+
+            
+                var html_af8d90fc5e7f46519776399ce5db2b4a = $('<div id="html_af8d90fc5e7f46519776399ce5db2b4a" style="width: 100.0%; height: 100.0%;">Midwood High School</div>')[0];
+                popup_1d7d59d988a441fcb764e4a9de5def5d.setContent(html_af8d90fc5e7f46519776399ce5db2b4a);
+            
+
+            regular_polygon_marker_3cfbda2a9d2c45878915c2d46498942a.bindPopup(popup_1d7d59d988a441fcb764e4a9de5def5d);
+
+            
+        
+    
+            var regular_polygon_marker_5bb8ba5ef82045ac87f55091572a8857 = new L.RegularPolygonMarker(
+                new L.LatLng(40.879958,-73.889011),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_6a64fffc47184dd393cd000c0313ebb8);
+            
+    
+            var popup_ba5272b3dbff4c0198b2332869b941bf = L.popup({maxWidth: '300'});
+
+            
+                var html_a6a5ed2ec5a6496386de01d2f815acef = $('<div id="html_a6a5ed2ec5a6496386de01d2f815acef" style="width: 100.0%; height: 100.0%;">Bronx High School of Science</div>')[0];
+                popup_ba5272b3dbff4c0198b2332869b941bf.setContent(html_a6a5ed2ec5a6496386de01d2f815acef);
+            
+
+            regular_polygon_marker_5bb8ba5ef82045ac87f55091572a8857.bindPopup(popup_ba5272b3dbff4c0198b2332869b941bf);
+
+            
+        
+    
+            var regular_polygon_marker_9de01577e24c4d0db93d60b514e85cc8 = new L.RegularPolygonMarker(
+                new L.LatLng(40.619671,-73.959141),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_6a64fffc47184dd393cd000c0313ebb8);
+            
+    
+            var popup_118bc11b89394d86adfb025a9c1d6490 = L.popup({maxWidth: '300'});
+
+            
+                var html_b85a732903ef4fb7804a17cb5493a0f3 = $('<div id="html_b85a732903ef4fb7804a17cb5493a0f3" style="width: 100.0%; height: 100.0%;">Edward R. Murrow High School</div>')[0];
+                popup_118bc11b89394d86adfb025a9c1d6490.setContent(html_b85a732903ef4fb7804a17cb5493a0f3);
+            
+
+            regular_polygon_marker_9de01577e24c4d0db93d60b514e85cc8.bindPopup(popup_118bc11b89394d86adfb025a9c1d6490);
+
+            
+        
+    
+            var regular_polygon_marker_5e9aef58b2fc45428e4c90f5d12aa10f = new L.RegularPolygonMarker(
+                new L.LatLng(40.774202,-73.985976),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_6a64fffc47184dd393cd000c0313ebb8);
+            
+    
+            var popup_a61d0ad23ffc42abb307fc284a1a7616 = L.popup({maxWidth: '300'});
+
+            
+                var html_667bca40622b4b9ca88c386a890be4a7 = $('<div id="html_667bca40622b4b9ca88c386a890be4a7" style="width: 100.0%; height: 100.0%;">Fiorello H. LaGuardia High School of Music &amp; Art and Performing Arts</div>')[0];
+                popup_a61d0ad23ffc42abb307fc284a1a7616.setContent(html_667bca40622b4b9ca88c386a890be4a7);
+            
+
+            regular_polygon_marker_5e9aef58b2fc45428e4c90f5d12aa10f.bindPopup(popup_a61d0ad23ffc42abb307fc284a1a7616);
+
+            
+        
+    
+            var regular_polygon_marker_30e0b1daa7784d839a6d539b40e11cab = new L.RegularPolygonMarker(
+                new L.LatLng(40.709461,-73.803001),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_6a64fffc47184dd393cd000c0313ebb8);
+            
+    
+            var popup_f2a882d76fc0433da6f095bf444c272f = L.popup({maxWidth: '300'});
+
+            
+                var html_9c03ae5b43924a8c979f4d25c373ad7d = $('<div id="html_9c03ae5b43924a8c979f4d25c373ad7d" style="width: 100.0%; height: 100.0%;">Hillcrest High School</div>')[0];
+                popup_f2a882d76fc0433da6f095bf444c272f.setContent(html_9c03ae5b43924a8c979f4d25c373ad7d);
+            
+
+            regular_polygon_marker_30e0b1daa7784d839a6d539b40e11cab.bindPopup(popup_f2a882d76fc0433da6f095bf444c272f);
+
+            
+        
+    
+            var regular_polygon_marker_c15457b5292341c98773e1134d8a6b50 = new L.RegularPolygonMarker(
+                new L.LatLng(40.613041,-74.002308),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_6a64fffc47184dd393cd000c0313ebb8);
+            
+    
+            var popup_b248a369dd0b43cb9e783ba42d18b1c6 = L.popup({maxWidth: '300'});
+
+            
+                var html_9e95a3ae9f034c6e89ff1f3e6009f516 = $('<div id="html_9e95a3ae9f034c6e89ff1f3e6009f516" style="width: 100.0%; height: 100.0%;">New Utrecht High School</div>')[0];
+                popup_b248a369dd0b43cb9e783ba42d18b1c6.setContent(html_9e95a3ae9f034c6e89ff1f3e6009f516);
+            
+
+            regular_polygon_marker_c15457b5292341c98773e1134d8a6b50.bindPopup(popup_b248a369dd0b43cb9e783ba42d18b1c6);
+
+            
+        
+    
+            var regular_polygon_marker_e2cc5b9f24524c99abd399177095a9d9 = new L.RegularPolygonMarker(
+                new L.LatLng(40.743309,-73.929577),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_6a64fffc47184dd393cd000c0313ebb8);
+            
+    
+            var popup_d17b52047a404f489a84c3f124cb9173 = L.popup({maxWidth: '300'});
+
+            
+                var html_0978bfb81e8646bbb220a801ab8a56c5 = $('<div id="html_0978bfb81e8646bbb220a801ab8a56c5" style="width: 100.0%; height: 100.0%;">Aviation Career &amp; Technical Education High School</div>')[0];
+                popup_d17b52047a404f489a84c3f124cb9173.setContent(html_0978bfb81e8646bbb220a801ab8a56c5);
+            
+
+            regular_polygon_marker_e2cc5b9f24524c99abd399177095a9d9.bindPopup(popup_d17b52047a404f489a84c3f124cb9173);
+
+            
+        
+    
+            var regular_polygon_marker_9779de85b15f49f49db001194101d707 = new L.RegularPolygonMarker(
+                new L.LatLng(40.621299,-73.982583),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_6a64fffc47184dd393cd000c0313ebb8);
+            
+    
+            var popup_04b03e8665d94ba7a8ab507d7495f2cc = L.popup({maxWidth: '300'});
+
+            
+                var html_3452dc2d6372490a8270c7be968ba681 = $('<div id="html_3452dc2d6372490a8270c7be968ba681" style="width: 100.0%; height: 100.0%;">Franklin Delano Roosevelt High School</div>')[0];
+                popup_04b03e8665d94ba7a8ab507d7495f2cc.setContent(html_3452dc2d6372490a8270c7be968ba681);
+            
+
+            regular_polygon_marker_9779de85b15f49f49db001194101d707.bindPopup(popup_04b03e8665d94ba7a8ab507d7495f2cc);
+
+            
+        
+    
+            var regular_polygon_marker_826a5d9f5d5a49a8bc82a5de3878e828 = new L.RegularPolygonMarker(
+                new L.LatLng(40.716071,-73.799692),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_6a64fffc47184dd393cd000c0313ebb8);
+            
+    
+            var popup_304625ad96994caa91181671b1127a15 = L.popup({maxWidth: '300'});
+
+            
+                var html_887ac20a5c7f4834bf3eaa277928baa7 = $('<div id="html_887ac20a5c7f4834bf3eaa277928baa7" style="width: 100.0%; height: 100.0%;">Thomas A. Edison Career and Technical Education High School</div>')[0];
+                popup_304625ad96994caa91181671b1127a15.setContent(html_887ac20a5c7f4834bf3eaa277928baa7);
+            
+
+            regular_polygon_marker_826a5d9f5d5a49a8bc82a5de3878e828.bindPopup(popup_304625ad96994caa91181671b1127a15);
+
+            
+        
+    
+            var regular_polygon_marker_5423e9507dfa4445973351018272eb11 = new L.RegularPolygonMarker(
+                new L.LatLng(40.719416,-73.979581),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_6a64fffc47184dd393cd000c0313ebb8);
+            
+    
+            var popup_e67789d1065a4a78b0bae9912a5a2407 = L.popup({maxWidth: '300'});
+
+            
+                var html_6fe2399104044fdd87b0265710d9680d = $('<div id="html_6fe2399104044fdd87b0265710d9680d" style="width: 100.0%; height: 100.0%;">New Explorations into Science, Technology and Math High School (NEST+m)</div>')[0];
+                popup_e67789d1065a4a78b0bae9912a5a2407.setContent(html_6fe2399104044fdd87b0265710d9680d);
+            
+
+            regular_polygon_marker_5423e9507dfa4445973351018272eb11.bindPopup(popup_e67789d1065a4a78b0bae9912a5a2407);
+
+            
+        
+    
+            var regular_polygon_marker_cd57fac0013443758c02bad435d833a5 = new L.RegularPolygonMarker(
+                new L.LatLng(40.58807,-73.981925),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_6a64fffc47184dd393cd000c0313ebb8);
+            
+    
+            var popup_1eb79fa4954943649ffe12e83706891f = L.popup({maxWidth: '300'});
+
+            
+                var html_1f431252a6104054bc2a78e70d54b4a0 = $('<div id="html_1f431252a6104054bc2a78e70d54b4a0" style="width: 100.0%; height: 100.0%;">John Dewey High School</div>')[0];
+                popup_1eb79fa4954943649ffe12e83706891f.setContent(html_1f431252a6104054bc2a78e70d54b4a0);
+            
+
+            regular_polygon_marker_cd57fac0013443758c02bad435d833a5.bindPopup(popup_1eb79fa4954943649ffe12e83706891f);
+
+            
+        
+    
+            var regular_polygon_marker_ef2e0980e3eb4cf4a78ec21e78fbb0a7 = new L.RegularPolygonMarker(
+                new L.LatLng(40.645436,-74.082149),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_6a64fffc47184dd393cd000c0313ebb8);
+            
+    
+            var popup_dcdfad06d91749dca4014a6e6ac3eacf = L.popup({maxWidth: '300'});
+
+            
+                var html_739bf549fce34a2b835cb29350c9e5a8 = $('<div id="html_739bf549fce34a2b835cb29350c9e5a8" style="width: 100.0%; height: 100.0%;">Curtis High School</div>')[0];
+                popup_dcdfad06d91749dca4014a6e6ac3eacf.setContent(html_739bf549fce34a2b835cb29350c9e5a8);
+            
+
+            regular_polygon_marker_ef2e0980e3eb4cf4a78ec21e78fbb0a7.bindPopup(popup_dcdfad06d91749dca4014a6e6ac3eacf);
+
+            
+        
+    
+            var regular_polygon_marker_da89660f253a419e8911ac01b9be031e = new L.RegularPolygonMarker(
+                new L.LatLng(40.757072,-73.911165),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_6a64fffc47184dd393cd000c0313ebb8);
+            
+    
+            var popup_b3b3fa25661644779f6df5e78da28a4c = L.popup({maxWidth: '300'});
+
+            
+                var html_8777a236963c4da3812d7000d4397e9c = $('<div id="html_8777a236963c4da3812d7000d4397e9c" style="width: 100.0%; height: 100.0%;">William Cullen Bryant High School</div>')[0];
+                popup_b3b3fa25661644779f6df5e78da28a4c.setContent(html_8777a236963c4da3812d7000d4397e9c);
+            
+
+            regular_polygon_marker_da89660f253a419e8911ac01b9be031e.bindPopup(popup_b3b3fa25661644779f6df5e78da28a4c);
+
+            
+        
+    
+            var regular_polygon_marker_546fcc8ba39c4391a071ebfcf8530cc3 = new L.RegularPolygonMarker(
+                new L.LatLng(40.584543,-73.825162),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_6a64fffc47184dd393cd000c0313ebb8);
+            
+    
+            var popup_18c8ef5b49f64a9f9001c71289834fbb = L.popup({maxWidth: '300'});
+
+            
+                var html_d12669aa6fd94e2185fe1f4cd8650673 = $('<div id="html_d12669aa6fd94e2185fe1f4cd8650673" style="width: 100.0%; height: 100.0%;">Scholars&#39; Academy</div>')[0];
+                popup_18c8ef5b49f64a9f9001c71289834fbb.setContent(html_d12669aa6fd94e2185fe1f4cd8650673);
+            
+
+            regular_polygon_marker_546fcc8ba39c4391a071ebfcf8530cc3.bindPopup(popup_18c8ef5b49f64a9f9001c71289834fbb);
+
+            
+        
+    
+            var regular_polygon_marker_8dca396ca97542ef9588fdf0fa1790fd = new L.RegularPolygonMarker(
+                new L.LatLng(40.568299,-74.117086),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_6a64fffc47184dd393cd000c0313ebb8);
+            
+    
+            var popup_8e3b0325f1014385931d2f373035d401 = L.popup({maxWidth: '300'});
+
+            
+                var html_a03dbd02a7114670b681a1b75e50bd4b = $('<div id="html_a03dbd02a7114670b681a1b75e50bd4b" style="width: 100.0%; height: 100.0%;">Staten Island Technical High School</div>')[0];
+                popup_8e3b0325f1014385931d2f373035d401.setContent(html_a03dbd02a7114670b681a1b75e50bd4b);
+            
+
+            regular_polygon_marker_8dca396ca97542ef9588fdf0fa1790fd.bindPopup(popup_8e3b0325f1014385931d2f373035d401);
+
+            
+        
+    
+            var regular_polygon_marker_2099ff886f6f49f0ba93b7f59b304d0b = new L.RegularPolygonMarker(
+                new L.LatLng(40.582627,-73.968733),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5
+                    }
+                )
+                .addTo(map_6a64fffc47184dd393cd000c0313ebb8);
+            
+    
+            var popup_321b8f8c49cd482cbf2495969a6e3ea3 = L.popup({maxWidth: '300'});
+
+            
+                var html_6a85b3757dfe419abf50eeb798ebfe31 = $('<div id="html_6a85b3757dfe419abf50eeb798ebfe31" style="width: 100.0%; height: 100.0%;">Abraham Lincoln High School</div>')[0];
+                popup_321b8f8c49cd482cbf2495969a6e3ea3.setContent(html_6a85b3757dfe419abf50eeb798ebfe31);
+            
+
+            regular_polygon_marker_2099ff886f6f49f0ba93b7f59b304d0b.bindPopup(popup_321b8f8c49cd482cbf2495969a6e3ea3);
+
+            
+        
+</script>

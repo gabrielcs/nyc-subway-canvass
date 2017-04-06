@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_34e7b632230441ed83f61af61eb4cd6a {
+                position : relative;
+                width : 60.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_34e7b632230441ed83f61af61eb4cd6a" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_34e7b632230441ed83f61af61eb4cd6a = L.map(
+                                  'map_34e7b632230441ed83f61af61eb4cd6a',
+                                  {center: [40.729,-73.9],
+                                  zoom: 11,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_08162dfc89fa41b8b854f873a05902b7 = L.tileLayer(
+                'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: '(c) <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (c) <a href="http://cartodb.com/attributions">CartoDB</a>, CartoDB <a href ="http://cartodb.com/attributions">attributions</a>',
+                    detectRetina: false
+                    }
+                ).addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+
+        
+    
+            var regular_polygon_marker_fcf555cfd5304583bb4dd2ac7b3532a3 = new L.RegularPolygonMarker(
+                new L.LatLng(40.688896,-73.976435),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_fd137364662f4decae677e40f534fb04 = L.popup({maxWidth: '300'});
+
+            
+                var html_51195a9c937449f4943e8e39e427469e = $('<div id="html_51195a9c937449f4943e8e39e427469e" style="width: 100.0%; height: 100.0%;">Brooklyn Technical High School</div>')[0];
+                popup_fd137364662f4decae677e40f534fb04.setContent(html_51195a9c937449f4943e8e39e427469e);
+            
+
+            regular_polygon_marker_fcf555cfd5304583bb4dd2ac7b3532a3.bindPopup(popup_fd137364662f4decae677e40f534fb04);
+
+            
+        
+    
+
+            var circle_marker_e339a50a2a9048c3bed0d27b2d78afd9 = L.circleMarker(
+                [40.68442016526762,-73.97754993539385],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_91c94fc7f68d4161a2a140c48ff1176d = L.popup({maxWidth: '300'});
+
+            
+                var html_d6a2c0776f7647b8b87062683dcb86bc = $('<div id="html_d6a2c0776f7647b8b87062683dcb86bc" style="width: 100.0%; height: 100.0%;">Atlantic Av - Barclay&#39;s Center</div>')[0];
+                popup_91c94fc7f68d4161a2a140c48ff1176d.setContent(html_d6a2c0776f7647b8b87062683dcb86bc);
+            
+
+            circle_marker_e339a50a2a9048c3bed0d27b2d78afd9.bindPopup(popup_91c94fc7f68d4161a2a140c48ff1176d);
+
+            
+        
+    
+            var regular_polygon_marker_a1fcbab765cf4af180f14707197e6a9a = new L.RegularPolygonMarker(
+                new L.LatLng(40.688896,-73.976435),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_3efaf7240639400f93c63c096613919c = L.popup({maxWidth: '300'});
+
+            
+                var html_212a0a458cd14d35ad23f39926d473f2 = $('<div id="html_212a0a458cd14d35ad23f39926d473f2" style="width: 100.0%; height: 100.0%;">Brooklyn Technical High School</div>')[0];
+                popup_3efaf7240639400f93c63c096613919c.setContent(html_212a0a458cd14d35ad23f39926d473f2);
+            
+
+            regular_polygon_marker_a1fcbab765cf4af180f14707197e6a9a.bindPopup(popup_3efaf7240639400f93c63c096613919c);
+
+            
+        
+    
+
+            var circle_marker_2d1f69408a76424292046f76c78e23e6 = L.circleMarker(
+                [40.68711899950771,-73.97537499833149],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_a9c037e44d2a4ba193623db30681df70 = L.popup({maxWidth: '300'});
+
+            
+                var html_c033cae93db1425c8487dd9e8393c525 = $('<div id="html_c033cae93db1425c8487dd9e8393c525" style="width: 100.0%; height: 100.0%;">Fulton St</div>')[0];
+                popup_a9c037e44d2a4ba193623db30681df70.setContent(html_c033cae93db1425c8487dd9e8393c525);
+            
+
+            circle_marker_2d1f69408a76424292046f76c78e23e6.bindPopup(popup_a9c037e44d2a4ba193623db30681df70);
+
+            
+        
+    
+            var regular_polygon_marker_9cc62df383284783a382287028cc61f2 = new L.RegularPolygonMarker(
+                new L.LatLng(40.688896,-73.976435),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_754c97cd80cf4a539ec20f014377c983 = L.popup({maxWidth: '300'});
+
+            
+                var html_a3c35d7eb3004506b5ee1079ebc4dd08 = $('<div id="html_a3c35d7eb3004506b5ee1079ebc4dd08" style="width: 100.0%; height: 100.0%;">Brooklyn Technical High School</div>')[0];
+                popup_754c97cd80cf4a539ec20f014377c983.setContent(html_a3c35d7eb3004506b5ee1079ebc4dd08);
+            
+
+            regular_polygon_marker_9cc62df383284783a382287028cc61f2.bindPopup(popup_754c97cd80cf4a539ec20f014377c983);
+
+            
+        
+    
+
+            var circle_marker_e1840208272845079001801fc897b385 = L.circleMarker(
+                [40.690648119969794,-73.98177094440949],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_59806f1bd6164b568fb02963badc8248 = L.popup({maxWidth: '300'});
+
+            
+                var html_a79f250151724aee8de17a12ad5a5402 = $('<div id="html_a79f250151724aee8de17a12ad5a5402" style="width: 100.0%; height: 100.0%;">DeKalb Ave</div>')[0];
+                popup_59806f1bd6164b568fb02963badc8248.setContent(html_a79f250151724aee8de17a12ad5a5402);
+            
+
+            circle_marker_e1840208272845079001801fc897b385.bindPopup(popup_59806f1bd6164b568fb02963badc8248);
+
+            
+        
+    
+            var regular_polygon_marker_881448221dc7473a8162cbaaede76d6c = new L.RegularPolygonMarker(
+                new L.LatLng(40.688896,-73.976435),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_de5bb5037da34e1ebc35b46c6e3d487c = L.popup({maxWidth: '300'});
+
+            
+                var html_b5b026db54964f6aa9c81f8972d8cb5d = $('<div id="html_b5b026db54964f6aa9c81f8972d8cb5d" style="width: 100.0%; height: 100.0%;">Brooklyn Technical High School</div>')[0];
+                popup_de5bb5037da34e1ebc35b46c6e3d487c.setContent(html_b5b026db54964f6aa9c81f8972d8cb5d);
+            
+
+            regular_polygon_marker_881448221dc7473a8162cbaaede76d6c.bindPopup(popup_de5bb5037da34e1ebc35b46c6e3d487c);
+
+            
+        
+    
+
+            var circle_marker_ac0eeeb0d6df43699cd7bc93f9ba1387 = L.circleMarker(
+                [40.68831058019022,-73.98040679874578],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_f45a6964e3b14cd4be920bdb42ec1dac = L.popup({maxWidth: '300'});
+
+            
+                var html_fe123ed348874dddb7b9b0b8eca8f552 = $('<div id="html_fe123ed348874dddb7b9b0b8eca8f552" style="width: 100.0%; height: 100.0%;">Nevins St</div>')[0];
+                popup_f45a6964e3b14cd4be920bdb42ec1dac.setContent(html_fe123ed348874dddb7b9b0b8eca8f552);
+            
+
+            circle_marker_ac0eeeb0d6df43699cd7bc93f9ba1387.bindPopup(popup_f45a6964e3b14cd4be920bdb42ec1dac);
+
+            
+        
+    
+            var regular_polygon_marker_a23b9d4d3e034a34b2a921c7bd4e7ed2 = new L.RegularPolygonMarker(
+                new L.LatLng(40.688896,-73.976435),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_1d5f116827544ab8a7d04f79b9e23543 = L.popup({maxWidth: '300'});
+
+            
+                var html_701ceae0b2544bc6b3054f35b5181e53 = $('<div id="html_701ceae0b2544bc6b3054f35b5181e53" style="width: 100.0%; height: 100.0%;">Brooklyn Technical High School</div>')[0];
+                popup_1d5f116827544ab8a7d04f79b9e23543.setContent(html_701ceae0b2544bc6b3054f35b5181e53);
+            
+
+            regular_polygon_marker_a23b9d4d3e034a34b2a921c7bd4e7ed2.bindPopup(popup_1d5f116827544ab8a7d04f79b9e23543);
+
+            
+        
+    
+
+            var circle_marker_1027c1083e254f41b57b12ed9c418a8b = L.circleMarker(
+                [40.68840847580642,-73.98503624034139],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_92a86ecee92744efa7a70f5218ecdd77 = L.popup({maxWidth: '300'});
+
+            
+                var html_4818c75bfe6a4a41aa9bfea7fce7502c = $('<div id="html_4818c75bfe6a4a41aa9bfea7fce7502c" style="width: 100.0%; height: 100.0%;">Hoyt - Schermerhorn Sts</div>')[0];
+                popup_92a86ecee92744efa7a70f5218ecdd77.setContent(html_4818c75bfe6a4a41aa9bfea7fce7502c);
+            
+
+            circle_marker_1027c1083e254f41b57b12ed9c418a8b.bindPopup(popup_92a86ecee92744efa7a70f5218ecdd77);
+
+            
+        
+    
+            var regular_polygon_marker_6022cb63bc914c94bd892abb0436c3ee = new L.RegularPolygonMarker(
+                new L.LatLng(40.632829,-73.952356),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_cb98ef0516234faf9a1963b676fd8398 = L.popup({maxWidth: '300'});
+
+            
+                var html_38b230427804447b8a28a2a593fd7f3a = $('<div id="html_38b230427804447b8a28a2a593fd7f3a" style="width: 100.0%; height: 100.0%;">Midwood High School</div>')[0];
+                popup_cb98ef0516234faf9a1963b676fd8398.setContent(html_38b230427804447b8a28a2a593fd7f3a);
+            
+
+            regular_polygon_marker_6022cb63bc914c94bd892abb0436c3ee.bindPopup(popup_cb98ef0516234faf9a1963b676fd8398);
+
+            
+        
+    
+
+            var circle_marker_cc036a620dbf441384e25a80d5aa8e0a = L.circleMarker(
+                [40.63284240700742,-73.94754120734406],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_61a65a488919479da41058928be77ede = L.popup({maxWidth: '300'});
+
+            
+                var html_dc4a8ab2b20b4af3a2ee62537adefbde = $('<div id="html_dc4a8ab2b20b4af3a2ee62537adefbde" style="width: 100.0%; height: 100.0%;">Brooklyn College - Flatbush Ave</div>')[0];
+                popup_61a65a488919479da41058928be77ede.setContent(html_dc4a8ab2b20b4af3a2ee62537adefbde);
+            
+
+            circle_marker_cc036a620dbf441384e25a80d5aa8e0a.bindPopup(popup_61a65a488919479da41058928be77ede);
+
+            
+        
+    
+            var regular_polygon_marker_33d24886afbe4fef95f6e1e649b89860 = new L.RegularPolygonMarker(
+                new L.LatLng(40.879958,-73.889011),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_4aeef36792384230ac049066ad44baf8 = L.popup({maxWidth: '300'});
+
+            
+                var html_a41094ea30294864a44de6a2ef364db1 = $('<div id="html_a41094ea30294864a44de6a2ef364db1" style="width: 100.0%; height: 100.0%;">Bronx High School of Science</div>')[0];
+                popup_4aeef36792384230ac049066ad44baf8.setContent(html_a41094ea30294864a44de6a2ef364db1);
+            
+
+            regular_polygon_marker_33d24886afbe4fef95f6e1e649b89860.bindPopup(popup_4aeef36792384230ac049066ad44baf8);
+
+            
+        
+    
+
+            var circle_marker_efe3b33b09ca4c50a33ccfb5bd2395fc = L.circleMarker(
+                [40.87974999947229,-73.88465499988732],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_45dfbdb9af894c23b4a593debfd9565f = L.popup({maxWidth: '300'});
+
+            
+                var html_ffc1195011c04e5d98bf8474f0052b18 = $('<div id="html_ffc1195011c04e5d98bf8474f0052b18" style="width: 100.0%; height: 100.0%;">Mosholu Pkwy</div>')[0];
+                popup_45dfbdb9af894c23b4a593debfd9565f.setContent(html_ffc1195011c04e5d98bf8474f0052b18);
+            
+
+            circle_marker_efe3b33b09ca4c50a33ccfb5bd2395fc.bindPopup(popup_45dfbdb9af894c23b4a593debfd9565f);
+
+            
+        
+    
+            var regular_polygon_marker_dbd0df24db0743d0a6ade02c8f4cfffd = new L.RegularPolygonMarker(
+                new L.LatLng(40.879958,-73.889011),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_e343ad82d7884601ad643ccbf7f2353b = L.popup({maxWidth: '300'});
+
+            
+                var html_8b83e4bc161b4600908c1df279d4f26f = $('<div id="html_8b83e4bc161b4600908c1df279d4f26f" style="width: 100.0%; height: 100.0%;">Bronx High School of Science</div>')[0];
+                popup_e343ad82d7884601ad643ccbf7f2353b.setContent(html_8b83e4bc161b4600908c1df279d4f26f);
+            
+
+            regular_polygon_marker_dbd0df24db0743d0a6ade02c8f4cfffd.bindPopup(popup_e343ad82d7884601ad643ccbf7f2353b);
+
+            
+        
+    
+
+            var circle_marker_1019663c84ce4ca9836021b48587f341 = L.circleMarker(
+                [40.87324399861646,-73.88713799889574],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_e6cb875ebd9446ceba031a564f43c576 = L.popup({maxWidth: '300'});
+
+            
+                var html_ada68093ac1841f6b596ab51337d5a59 = $('<div id="html_ada68093ac1841f6b596ab51337d5a59" style="width: 100.0%; height: 100.0%;">Bedford Park Blvd</div>')[0];
+                popup_e6cb875ebd9446ceba031a564f43c576.setContent(html_ada68093ac1841f6b596ab51337d5a59);
+            
+
+            circle_marker_1019663c84ce4ca9836021b48587f341.bindPopup(popup_e6cb875ebd9446ceba031a564f43c576);
+
+            
+        
+    
+            var regular_polygon_marker_31d878faf97e4a61bffedf05da246f0a = new L.RegularPolygonMarker(
+                new L.LatLng(40.619671,-73.959141),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_8cb6fdc8e2ba44148747c2fe6eb2b423 = L.popup({maxWidth: '300'});
+
+            
+                var html_5f858e9b446944a8b1a6d33ffe38be8e = $('<div id="html_5f858e9b446944a8b1a6d33ffe38be8e" style="width: 100.0%; height: 100.0%;">Edward R. Murrow High School</div>')[0];
+                popup_8cb6fdc8e2ba44148747c2fe6eb2b423.setContent(html_5f858e9b446944a8b1a6d33ffe38be8e);
+            
+
+            regular_polygon_marker_31d878faf97e4a61bffedf05da246f0a.bindPopup(popup_8cb6fdc8e2ba44148747c2fe6eb2b423);
+
+            
+        
+    
+
+            var circle_marker_caba5aab620e432f89459f5ce3a61477 = L.circleMarker(
+                [40.625022819915166,-73.96069316246925],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_04b48a82f8ab4b689abd67d482948879 = L.popup({maxWidth: '300'});
+
+            
+                var html_0222a5c492734178a671211def7e5845 = $('<div id="html_0222a5c492734178a671211def7e5845" style="width: 100.0%; height: 100.0%;">Ave J</div>')[0];
+                popup_04b48a82f8ab4b689abd67d482948879.setContent(html_0222a5c492734178a671211def7e5845);
+            
+
+            circle_marker_caba5aab620e432f89459f5ce3a61477.bindPopup(popup_04b48a82f8ab4b689abd67d482948879);
+
+            
+        
+    
+            var regular_polygon_marker_6c7f319e1f1e43298a164862d8b4aedb = new L.RegularPolygonMarker(
+                new L.LatLng(40.619671,-73.959141),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_d98eae0cb9534bcab564b1b1ae67e770 = L.popup({maxWidth: '300'});
+
+            
+                var html_b1713666c15b4a5ab7dc39d7d50d77a3 = $('<div id="html_b1713666c15b4a5ab7dc39d7d50d77a3" style="width: 100.0%; height: 100.0%;">Edward R. Murrow High School</div>')[0];
+                popup_d98eae0cb9534bcab564b1b1ae67e770.setContent(html_b1713666c15b4a5ab7dc39d7d50d77a3);
+            
+
+            regular_polygon_marker_6c7f319e1f1e43298a164862d8b4aedb.bindPopup(popup_d98eae0cb9534bcab564b1b1ae67e770);
+
+            
+        
+    
+
+            var circle_marker_0c1efef9022e44348f16348be03c7728 = L.circleMarker(
+                [40.617397744443736,-73.9592431052215],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_019924532b9b487eb7ceb00d5d35eca4 = L.popup({maxWidth: '300'});
+
+            
+                var html_23ef89fd91a54999a7d625bbcce1da3f = $('<div id="html_23ef89fd91a54999a7d625bbcce1da3f" style="width: 100.0%; height: 100.0%;">Ave M</div>')[0];
+                popup_019924532b9b487eb7ceb00d5d35eca4.setContent(html_23ef89fd91a54999a7d625bbcce1da3f);
+            
+
+            circle_marker_0c1efef9022e44348f16348be03c7728.bindPopup(popup_019924532b9b487eb7ceb00d5d35eca4);
+
+            
+        
+    
+            var regular_polygon_marker_40ec263c7afe4fdf8f6283f75c171dc1 = new L.RegularPolygonMarker(
+                new L.LatLng(40.774202,-73.985976),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_4cbc630edc824308bd3cb29cdf1924fd = L.popup({maxWidth: '300'});
+
+            
+                var html_d3d17f63ff2249288a36c684ac573a13 = $('<div id="html_d3d17f63ff2249288a36c684ac573a13" style="width: 100.0%; height: 100.0%;">Fiorello H. LaGuardia High School of Music &amp; Art and Performing Arts</div>')[0];
+                popup_4cbc630edc824308bd3cb29cdf1924fd.setContent(html_d3d17f63ff2249288a36c684ac573a13);
+            
+
+            regular_polygon_marker_40ec263c7afe4fdf8f6283f75c171dc1.bindPopup(popup_4cbc630edc824308bd3cb29cdf1924fd);
+
+            
+        
+    
+
+            var circle_marker_a88b6dd439eb485bb47046e9c6ff6420 = L.circleMarker(
+                [40.77845300068614,-73.98197000159583],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_5d6536f051844da7890e55296c86d218 = L.popup({maxWidth: '300'});
+
+            
+                var html_93cffd7967db45b9a21ca3fa7b73ad04 = $('<div id="html_93cffd7967db45b9a21ca3fa7b73ad04" style="width: 100.0%; height: 100.0%;">72nd St</div>')[0];
+                popup_5d6536f051844da7890e55296c86d218.setContent(html_93cffd7967db45b9a21ca3fa7b73ad04);
+            
+
+            circle_marker_a88b6dd439eb485bb47046e9c6ff6420.bindPopup(popup_5d6536f051844da7890e55296c86d218);
+
+            
+        
+    
+            var regular_polygon_marker_63e7405866c4417bbca0c1fcefd2d49d = new L.RegularPolygonMarker(
+                new L.LatLng(40.774202,-73.985976),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_d4a35da6694c4c66802c5a7807ab1a80 = L.popup({maxWidth: '300'});
+
+            
+                var html_c25a66aa94964c15b9558af92edf2b95 = $('<div id="html_c25a66aa94964c15b9558af92edf2b95" style="width: 100.0%; height: 100.0%;">Fiorello H. LaGuardia High School of Music &amp; Art and Performing Arts</div>')[0];
+                popup_d4a35da6694c4c66802c5a7807ab1a80.setContent(html_c25a66aa94964c15b9558af92edf2b95);
+            
+
+            regular_polygon_marker_63e7405866c4417bbca0c1fcefd2d49d.bindPopup(popup_d4a35da6694c4c66802c5a7807ab1a80);
+
+            
+        
+    
+
+            var circle_marker_ad6787ad8dfd4a6e83bc8ae22a1cf892 = L.circleMarker(
+                [40.77344000052039,-73.98220899995783],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_252aedd0cf4f42f88f16f99aa866e415 = L.popup({maxWidth: '300'});
+
+            
+                var html_083b57f7b877484db5dc9ccf4cd72216 = $('<div id="html_083b57f7b877484db5dc9ccf4cd72216" style="width: 100.0%; height: 100.0%;">66th St - Lincoln Ctr</div>')[0];
+                popup_252aedd0cf4f42f88f16f99aa866e415.setContent(html_083b57f7b877484db5dc9ccf4cd72216);
+            
+
+            circle_marker_ad6787ad8dfd4a6e83bc8ae22a1cf892.bindPopup(popup_252aedd0cf4f42f88f16f99aa866e415);
+
+            
+        
+    
+            var regular_polygon_marker_8e5d10f206e141879903b8d342ae3796 = new L.RegularPolygonMarker(
+                new L.LatLng(40.774202,-73.985976),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_84c62e9add634c95b5e1c5dec6adf7ca = L.popup({maxWidth: '300'});
+
+            
+                var html_555eaba28b83439b8d610e046be2838c = $('<div id="html_555eaba28b83439b8d610e046be2838c" style="width: 100.0%; height: 100.0%;">Fiorello H. LaGuardia High School of Music &amp; Art and Performing Arts</div>')[0];
+                popup_84c62e9add634c95b5e1c5dec6adf7ca.setContent(html_555eaba28b83439b8d610e046be2838c);
+            
+
+            regular_polygon_marker_8e5d10f206e141879903b8d342ae3796.bindPopup(popup_84c62e9add634c95b5e1c5dec6adf7ca);
+
+            
+        
+    
+
+            var circle_marker_3bbf2aae3d6144ee95717def7f377dcf = L.circleMarker(
+                [40.76824700063689,-73.98192900232715],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_47dd3f3731c641a296cac2e699c0098d = L.popup({maxWidth: '300'});
+
+            
+                var html_505b5a09f3f94ab39085f86dc9233e29 = $('<div id="html_505b5a09f3f94ab39085f86dc9233e29" style="width: 100.0%; height: 100.0%;">59th St - Columbus Circle</div>')[0];
+                popup_47dd3f3731c641a296cac2e699c0098d.setContent(html_505b5a09f3f94ab39085f86dc9233e29);
+            
+
+            circle_marker_3bbf2aae3d6144ee95717def7f377dcf.bindPopup(popup_47dd3f3731c641a296cac2e699c0098d);
+
+            
+        
+    
+            var regular_polygon_marker_8f5deec11b25412d912a5e3764321c3b = new L.RegularPolygonMarker(
+                new L.LatLng(40.709461,-73.803001),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_466c10140aca4c0ba6a69cba41094b80 = L.popup({maxWidth: '300'});
+
+            
+                var html_e625f35a0c244d1a8e4b535944d7c047 = $('<div id="html_e625f35a0c244d1a8e4b535944d7c047" style="width: 100.0%; height: 100.0%;">Hillcrest High School</div>')[0];
+                popup_466c10140aca4c0ba6a69cba41094b80.setContent(html_e625f35a0c244d1a8e4b535944d7c047);
+            
+
+            regular_polygon_marker_8f5deec11b25412d912a5e3764321c3b.bindPopup(popup_466c10140aca4c0ba6a69cba41094b80);
+
+            
+        
+    
+
+            var circle_marker_91c7dbc4d0f94a30b5b36a451bbfd808 = L.circleMarker(
+                [40.707571999615695,-73.80328900021885],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_e99f0ccb5580469fbee670a4c9dc04e1 = L.popup({maxWidth: '300'});
+
+            
+                var html_8c3de4c0174b4f7ebbb6442643140422 = $('<div id="html_8c3de4c0174b4f7ebbb6442643140422" style="width: 100.0%; height: 100.0%;">Parsons Blvd</div>')[0];
+                popup_e99f0ccb5580469fbee670a4c9dc04e1.setContent(html_8c3de4c0174b4f7ebbb6442643140422);
+            
+
+            circle_marker_91c7dbc4d0f94a30b5b36a451bbfd808.bindPopup(popup_e99f0ccb5580469fbee670a4c9dc04e1);
+
+            
+        
+    
+            var regular_polygon_marker_a166ee72af1f4b119bd9d92645eb59ac = new L.RegularPolygonMarker(
+                new L.LatLng(40.709461,-73.803001),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_e633e3c2c274433d8d5d54468556cb1a = L.popup({maxWidth: '300'});
+
+            
+                var html_bd29d180c4384fbe9076c3de37e36c20 = $('<div id="html_bd29d180c4384fbe9076c3de37e36c20" style="width: 100.0%; height: 100.0%;">Hillcrest High School</div>')[0];
+                popup_e633e3c2c274433d8d5d54468556cb1a.setContent(html_bd29d180c4384fbe9076c3de37e36c20);
+            
+
+            regular_polygon_marker_a166ee72af1f4b119bd9d92645eb59ac.bindPopup(popup_e633e3c2c274433d8d5d54468556cb1a);
+
+            
+        
+    
+
+            var circle_marker_67dc1d61826745c9b6c5822309f015a2 = L.circleMarker(
+                [40.70541799906764,-73.81083299897232],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_32a1d4b1bde04dc7b0101f9ece56de39 = L.popup({maxWidth: '300'});
+
+            
+                var html_9ca2c33ca3e4470c9e01fe2a9332cbf6 = $('<div id="html_9ca2c33ca3e4470c9e01fe2a9332cbf6" style="width: 100.0%; height: 100.0%;">Sutphin Blvd</div>')[0];
+                popup_32a1d4b1bde04dc7b0101f9ece56de39.setContent(html_9ca2c33ca3e4470c9e01fe2a9332cbf6);
+            
+
+            circle_marker_67dc1d61826745c9b6c5822309f015a2.bindPopup(popup_32a1d4b1bde04dc7b0101f9ece56de39);
+
+            
+        
+    
+            var regular_polygon_marker_cb4c9ca63d5747cbac1c7df8eaeb0007 = new L.RegularPolygonMarker(
+                new L.LatLng(40.613041,-74.002308),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_76b2e1a3848b41a8be355592e75152d0 = L.popup({maxWidth: '300'});
+
+            
+                var html_9facdd13f3734468a0d1ec29909128f4 = $('<div id="html_9facdd13f3734468a0d1ec29909128f4" style="width: 100.0%; height: 100.0%;">New Utrecht High School</div>')[0];
+                popup_76b2e1a3848b41a8be355592e75152d0.setContent(html_9facdd13f3734468a0d1ec29909128f4);
+            
+
+            regular_polygon_marker_cb4c9ca63d5747cbac1c7df8eaeb0007.bindPopup(popup_76b2e1a3848b41a8be355592e75152d0);
+
+            
+        
+    
+
+            var circle_marker_dc35e2ccf7ec482db743e5a6cde96bef = L.circleMarker(
+                [40.61315892569516,-74.00058287431507],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_f9302f1eb49f40079954fea739a9ed77 = L.popup({maxWidth: '300'});
+
+            
+                var html_d8588ede9376479085053ce4b56d71b9 = $('<div id="html_d8588ede9376479085053ce4b56d71b9" style="width: 100.0%; height: 100.0%;">79th St</div>')[0];
+                popup_f9302f1eb49f40079954fea739a9ed77.setContent(html_d8588ede9376479085053ce4b56d71b9);
+            
+
+            circle_marker_dc35e2ccf7ec482db743e5a6cde96bef.bindPopup(popup_f9302f1eb49f40079954fea739a9ed77);
+
+            
+        
+    
+            var regular_polygon_marker_b67f710a2f8b405fae240464345552b7 = new L.RegularPolygonMarker(
+                new L.LatLng(40.613041,-74.002308),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_6fe541ee98f14dd682a58fe2be8ade17 = L.popup({maxWidth: '300'});
+
+            
+                var html_7167710ed9f5462fbafd9a2c84cae251 = $('<div id="html_7167710ed9f5462fbafd9a2c84cae251" style="width: 100.0%; height: 100.0%;">New Utrecht High School</div>')[0];
+                popup_6fe541ee98f14dd682a58fe2be8ade17.setContent(html_7167710ed9f5462fbafd9a2c84cae251);
+            
+
+            regular_polygon_marker_b67f710a2f8b405fae240464345552b7.bindPopup(popup_6fe541ee98f14dd682a58fe2be8ade17);
+
+            
+        
+    
+
+            var circle_marker_51cf16b859924e7095931211ff30ea09 = L.circleMarker(
+                [40.61925870977273,-73.99884094850685],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_f212fb17af86412795d5192732436085 = L.popup({maxWidth: '300'});
+
+            
+                var html_c0671e6ff46e49399d7728da13c43b07 = $('<div id="html_c0671e6ff46e49399d7728da13c43b07" style="width: 100.0%; height: 100.0%;">71st St</div>')[0];
+                popup_f212fb17af86412795d5192732436085.setContent(html_c0671e6ff46e49399d7728da13c43b07);
+            
+
+            circle_marker_51cf16b859924e7095931211ff30ea09.bindPopup(popup_f212fb17af86412795d5192732436085);
+
+            
+        
+    
+            var regular_polygon_marker_6e84325f5f19408ca1fee3e4c01b9298 = new L.RegularPolygonMarker(
+                new L.LatLng(40.613041,-74.002308),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_02a98288afcd4651ad0540e242431dbc = L.popup({maxWidth: '300'});
+
+            
+                var html_5a6919c5c59244fb8dd8af0499fa32a3 = $('<div id="html_5a6919c5c59244fb8dd8af0499fa32a3" style="width: 100.0%; height: 100.0%;">New Utrecht High School</div>')[0];
+                popup_02a98288afcd4651ad0540e242431dbc.setContent(html_5a6919c5c59244fb8dd8af0499fa32a3);
+            
+
+            regular_polygon_marker_6e84325f5f19408ca1fee3e4c01b9298.bindPopup(popup_02a98288afcd4651ad0540e242431dbc);
+
+            
+        
+    
+
+            var circle_marker_02da04f6516e447dab9a99022134de17 = L.circleMarker(
+                [40.60773573171741,-74.00159259239406],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_bdc67292750d45c1ac2483f1dcd26229 = L.popup({maxWidth: '300'});
+
+            
+                var html_23b1e37ca12945418dd882fedf55a526 = $('<div id="html_23b1e37ca12945418dd882fedf55a526" style="width: 100.0%; height: 100.0%;">18th Ave</div>')[0];
+                popup_bdc67292750d45c1ac2483f1dcd26229.setContent(html_23b1e37ca12945418dd882fedf55a526);
+            
+
+            circle_marker_02da04f6516e447dab9a99022134de17.bindPopup(popup_bdc67292750d45c1ac2483f1dcd26229);
+
+            
+        
+    
+            var regular_polygon_marker_784634a5ea694a1289b2bbcd4bda8634 = new L.RegularPolygonMarker(
+                new L.LatLng(40.743309,-73.929577),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_efd5f6533b8b4454aef7853265673bff = L.popup({maxWidth: '300'});
+
+            
+                var html_74013be7d0314e2d8827a0110ee39869 = $('<div id="html_74013be7d0314e2d8827a0110ee39869" style="width: 100.0%; height: 100.0%;">Aviation Career &amp; Technical Education High School</div>')[0];
+                popup_efd5f6533b8b4454aef7853265673bff.setContent(html_74013be7d0314e2d8827a0110ee39869);
+            
+
+            regular_polygon_marker_784634a5ea694a1289b2bbcd4bda8634.bindPopup(popup_efd5f6533b8b4454aef7853265673bff);
+
+            
+        
+    
+
+            var circle_marker_623d3fa59aab4dbcb8ea673a65086e9b = L.circleMarker(
+                [40.74458699983993,-73.93099699953838],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_fa495963306640fba408ec0552b74fb4 = L.popup({maxWidth: '300'});
+
+            
+                var html_6cfdec27e67347c29c7ce19dac583fd2 = $('<div id="html_6cfdec27e67347c29c7ce19dac583fd2" style="width: 100.0%; height: 100.0%;">33rd St</div>')[0];
+                popup_fa495963306640fba408ec0552b74fb4.setContent(html_6cfdec27e67347c29c7ce19dac583fd2);
+            
+
+            circle_marker_623d3fa59aab4dbcb8ea673a65086e9b.bindPopup(popup_fa495963306640fba408ec0552b74fb4);
+
+            
+        
+    
+            var regular_polygon_marker_ced4a63f4547448ab182f260e2cd56cb = new L.RegularPolygonMarker(
+                new L.LatLng(40.743309,-73.929577),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_10104a96229e466997f0bb179ab36125 = L.popup({maxWidth: '300'});
+
+            
+                var html_68bdc4783d8841259fcaa6d246b6bf10 = $('<div id="html_68bdc4783d8841259fcaa6d246b6bf10" style="width: 100.0%; height: 100.0%;">Aviation Career &amp; Technical Education High School</div>')[0];
+                popup_10104a96229e466997f0bb179ab36125.setContent(html_68bdc4783d8841259fcaa6d246b6bf10);
+            
+
+            regular_polygon_marker_ced4a63f4547448ab182f260e2cd56cb.bindPopup(popup_10104a96229e466997f0bb179ab36125);
+
+            
+        
+    
+
+            var circle_marker_53c3656166de41e4b312caef12a3cd02 = L.circleMarker(
+                [40.74378100149132,-73.9240159984882],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_7f63a648ca134a5da90e1edfa85344f9 = L.popup({maxWidth: '300'});
+
+            
+                var html_334d9e309fcc4ed78914a7a361b61b70 = $('<div id="html_334d9e309fcc4ed78914a7a361b61b70" style="width: 100.0%; height: 100.0%;">40th St</div>')[0];
+                popup_7f63a648ca134a5da90e1edfa85344f9.setContent(html_334d9e309fcc4ed78914a7a361b61b70);
+            
+
+            circle_marker_53c3656166de41e4b312caef12a3cd02.bindPopup(popup_7f63a648ca134a5da90e1edfa85344f9);
+
+            
+        
+    
+            var regular_polygon_marker_cdb046f4c013418b8516885003405161 = new L.RegularPolygonMarker(
+                new L.LatLng(40.621299,-73.982583),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_f3766b6c029442beaaa13dc232a28e21 = L.popup({maxWidth: '300'});
+
+            
+                var html_4cd64042d62a478ca3321e5c4469491b = $('<div id="html_4cd64042d62a478ca3321e5c4469491b" style="width: 100.0%; height: 100.0%;">Franklin Delano Roosevelt High School</div>')[0];
+                popup_f3766b6c029442beaaa13dc232a28e21.setContent(html_4cd64042d62a478ca3321e5c4469491b);
+            
+
+            regular_polygon_marker_cdb046f4c013418b8516885003405161.bindPopup(popup_f3766b6c029442beaaa13dc232a28e21);
+
+            
+        
+    
+
+            var circle_marker_796f79d3cbf54c299e325cc552bc4f5e = L.circleMarker(
+                [40.617108999866005,-73.98452199846113],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_e265b66d287a41a7872c4288b7f8218b = L.popup({maxWidth: '300'});
+
+            
+                var html_1b1daeb61a68454da82ec9f6ca9fd2a2 = $('<div id="html_1b1daeb61a68454da82ec9f6ca9fd2a2" style="width: 100.0%; height: 100.0%;">20th Ave</div>')[0];
+                popup_e265b66d287a41a7872c4288b7f8218b.setContent(html_1b1daeb61a68454da82ec9f6ca9fd2a2);
+            
+
+            circle_marker_796f79d3cbf54c299e325cc552bc4f5e.bindPopup(popup_e265b66d287a41a7872c4288b7f8218b);
+
+            
+        
+    
+            var regular_polygon_marker_eaf4c0c774d24b868d235bf11faef9fc = new L.RegularPolygonMarker(
+                new L.LatLng(40.621299,-73.982583),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_aed8d37f511b4cd69ba1e2303f57bd9b = L.popup({maxWidth: '300'});
+
+            
+                var html_e49b089cfcff48ef80d219bb54037968 = $('<div id="html_e49b089cfcff48ef80d219bb54037968" style="width: 100.0%; height: 100.0%;">Franklin Delano Roosevelt High School</div>')[0];
+                popup_aed8d37f511b4cd69ba1e2303f57bd9b.setContent(html_e49b089cfcff48ef80d219bb54037968);
+            
+
+            regular_polygon_marker_eaf4c0c774d24b868d235bf11faef9fc.bindPopup(popup_aed8d37f511b4cd69ba1e2303f57bd9b);
+
+            
+        
+    
+
+            var circle_marker_7c34f2c2bdf64e349c40342806121f75 = L.circleMarker(
+                [40.620686997680025,-73.99045399865993],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_b2b756c4d7154dfa941f476f93f1799b = L.popup({maxWidth: '300'});
+
+            
+                var html_40cee4aa479a4ce58485f3131a045a0d = $('<div id="html_40cee4aa479a4ce58485f3131a045a0d" style="width: 100.0%; height: 100.0%;">18th Ave</div>')[0];
+                popup_b2b756c4d7154dfa941f476f93f1799b.setContent(html_40cee4aa479a4ce58485f3131a045a0d);
+            
+
+            circle_marker_7c34f2c2bdf64e349c40342806121f75.bindPopup(popup_b2b756c4d7154dfa941f476f93f1799b);
+
+            
+        
+    
+            var regular_polygon_marker_a43bc6f2e1044a1f957cc74e17310bca = new L.RegularPolygonMarker(
+                new L.LatLng(40.716071,-73.799692),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_1bfcacb633a5476d91051c412bfb1583 = L.popup({maxWidth: '300'});
+
+            
+                var html_e5b89f1bcc7548ddbfb2ef7528432793 = $('<div id="html_e5b89f1bcc7548ddbfb2ef7528432793" style="width: 100.0%; height: 100.0%;">Thomas A. Edison Career and Technical Education High School</div>')[0];
+                popup_1bfcacb633a5476d91051c412bfb1583.setContent(html_e5b89f1bcc7548ddbfb2ef7528432793);
+            
+
+            regular_polygon_marker_a43bc6f2e1044a1f957cc74e17310bca.bindPopup(popup_1bfcacb633a5476d91051c412bfb1583);
+
+            
+        
+    
+
+            var circle_marker_17dfeff4dfb741ca934e23c73b3b72c5 = L.circleMarker(
+                [40.710517502784,-73.79347419927721],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_d05c0edc447f47b2b403be0fca03cbc4 = L.popup({maxWidth: '300'});
+
+            
+                var html_007869531c824719aba72e9161413912 = $('<div id="html_007869531c824719aba72e9161413912" style="width: 100.0%; height: 100.0%;">169th St</div>')[0];
+                popup_d05c0edc447f47b2b403be0fca03cbc4.setContent(html_007869531c824719aba72e9161413912);
+            
+
+            circle_marker_17dfeff4dfb741ca934e23c73b3b72c5.bindPopup(popup_d05c0edc447f47b2b403be0fca03cbc4);
+
+            
+        
+    
+            var regular_polygon_marker_b0afeb13c9f2417a95fcae1cd9890d32 = new L.RegularPolygonMarker(
+                new L.LatLng(40.719416,-73.979581),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_69e74607e9a447c0994fceb5398466ff = L.popup({maxWidth: '300'});
+
+            
+                var html_d01bda1cff444509b8081f569724e735 = $('<div id="html_d01bda1cff444509b8081f569724e735" style="width: 100.0%; height: 100.0%;">New Explorations into Science, Technology and Math High School (NEST+m)</div>')[0];
+                popup_69e74607e9a447c0994fceb5398466ff.setContent(html_d01bda1cff444509b8081f569724e735);
+            
+
+            regular_polygon_marker_b0afeb13c9f2417a95fcae1cd9890d32.bindPopup(popup_69e74607e9a447c0994fceb5398466ff);
+
+            
+        
+    
+
+            var circle_marker_d257c7555c2d4843943eb0cacb49a95b = L.circleMarker(
+                [40.71868074219453,-73.98807806807719],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_aadfa246afdc4b4792965f61a184ccdd = L.popup({maxWidth: '300'});
+
+            
+                var html_58549ab05bd245e290a8e13b435c115b = $('<div id="html_58549ab05bd245e290a8e13b435c115b" style="width: 100.0%; height: 100.0%;">Delancey St - Essex St</div>')[0];
+                popup_aadfa246afdc4b4792965f61a184ccdd.setContent(html_58549ab05bd245e290a8e13b435c115b);
+            
+
+            circle_marker_d257c7555c2d4843943eb0cacb49a95b.bindPopup(popup_aadfa246afdc4b4792965f61a184ccdd);
+
+            
+        
+    
+            var regular_polygon_marker_70e56148ed094a9488bd3402019b7ce6 = new L.RegularPolygonMarker(
+                new L.LatLng(40.58807,-73.981925),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_fd01b91fc0cb4693ab096c3e749ba0f3 = L.popup({maxWidth: '300'});
+
+            
+                var html_29f47f78d79d471fa5c238ab575a55c1 = $('<div id="html_29f47f78d79d471fa5c238ab575a55c1" style="width: 100.0%; height: 100.0%;">John Dewey High School</div>')[0];
+                popup_fd01b91fc0cb4693ab096c3e749ba0f3.setContent(html_29f47f78d79d471fa5c238ab575a55c1);
+            
+
+            regular_polygon_marker_70e56148ed094a9488bd3402019b7ce6.bindPopup(popup_fd01b91fc0cb4693ab096c3e749ba0f3);
+
+            
+        
+    
+
+            var circle_marker_5c6cde89ba594f52a53234178012e560 = L.circleMarker(
+                [40.58884066651933,-73.98376500045946],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_98a3a66b2f6e427896554ee78ffecacb = L.popup({maxWidth: '300'});
+
+            
+                var html_9814270256f347a2b8b3ef759276b152 = $('<div id="html_9814270256f347a2b8b3ef759276b152" style="width: 100.0%; height: 100.0%;">Bay 50th St</div>')[0];
+                popup_98a3a66b2f6e427896554ee78ffecacb.setContent(html_9814270256f347a2b8b3ef759276b152);
+            
+
+            circle_marker_5c6cde89ba594f52a53234178012e560.bindPopup(popup_98a3a66b2f6e427896554ee78ffecacb);
+
+            
+        
+    
+            var regular_polygon_marker_90f4edf051844d1aab77d3fed1006661 = new L.RegularPolygonMarker(
+                new L.LatLng(40.757072,-73.911165),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_5be4165251eb417e9ac873cddad5c210 = L.popup({maxWidth: '300'});
+
+            
+                var html_4686b045c3804640b4baa17ffc63f039 = $('<div id="html_4686b045c3804640b4baa17ffc63f039" style="width: 100.0%; height: 100.0%;">William Cullen Bryant High School</div>')[0];
+                popup_5be4165251eb417e9ac873cddad5c210.setContent(html_4686b045c3804640b4baa17ffc63f039);
+            
+
+            regular_polygon_marker_90f4edf051844d1aab77d3fed1006661.bindPopup(popup_5be4165251eb417e9ac873cddad5c210);
+
+            
+        
+    
+
+            var circle_marker_bff32fb79d674acfb4c0df01f3b43709 = L.circleMarker(
+                [40.75698735912575,-73.9205264716827],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_6670cb69478541eba8be88cde4f74561 = L.popup({maxWidth: '300'});
+
+            
+                var html_bbed5578b5c74f2a970b1d8f1d644c7f = $('<div id="html_bbed5578b5c74f2a970b1d8f1d644c7f" style="width: 100.0%; height: 100.0%;">Steinway St</div>')[0];
+                popup_6670cb69478541eba8be88cde4f74561.setContent(html_bbed5578b5c74f2a970b1d8f1d644c7f);
+            
+
+            circle_marker_bff32fb79d674acfb4c0df01f3b43709.bindPopup(popup_6670cb69478541eba8be88cde4f74561);
+
+            
+        
+    
+            var regular_polygon_marker_8ad13160e67b4d9295cdc93c283fe60c = new L.RegularPolygonMarker(
+                new L.LatLng(40.757072,-73.911165),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_2c42fd9a6f5245bd9ebfb41efcbcdd9f = L.popup({maxWidth: '300'});
+
+            
+                var html_0076987f0d314a19bf80c2944d74d8aa = $('<div id="html_0076987f0d314a19bf80c2944d74d8aa" style="width: 100.0%; height: 100.0%;">William Cullen Bryant High School</div>')[0];
+                popup_2c42fd9a6f5245bd9ebfb41efcbcdd9f.setContent(html_0076987f0d314a19bf80c2944d74d8aa);
+            
+
+            regular_polygon_marker_8ad13160e67b4d9295cdc93c283fe60c.bindPopup(popup_2c42fd9a6f5245bd9ebfb41efcbcdd9f);
+
+            
+        
+    
+
+            var circle_marker_a8524229f7094be5890998fc4ccdf057 = L.circleMarker(
+                [40.756316952608096,-73.91352174995538],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_a9e979821a1847e68bef9c2704926ab9 = L.popup({maxWidth: '300'});
+
+            
+                var html_dd4605d06f0d481991b5d99b4df6e935 = $('<div id="html_dd4605d06f0d481991b5d99b4df6e935" style="width: 100.0%; height: 100.0%;">46th St</div>')[0];
+                popup_a9e979821a1847e68bef9c2704926ab9.setContent(html_dd4605d06f0d481991b5d99b4df6e935);
+            
+
+            circle_marker_a8524229f7094be5890998fc4ccdf057.bindPopup(popup_a9e979821a1847e68bef9c2704926ab9);
+
+            
+        
+    
+            var regular_polygon_marker_2d75f298fd0645b0bbc4d77a8284851b = new L.RegularPolygonMarker(
+                new L.LatLng(40.757072,-73.911165),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_007bbd0b4c124c91a28e30716388730e = L.popup({maxWidth: '300'});
+
+            
+                var html_83d895bf39dd43e8acae35aa51bd898e = $('<div id="html_83d895bf39dd43e8acae35aa51bd898e" style="width: 100.0%; height: 100.0%;">William Cullen Bryant High School</div>')[0];
+                popup_007bbd0b4c124c91a28e30716388730e.setContent(html_83d895bf39dd43e8acae35aa51bd898e);
+            
+
+            regular_polygon_marker_2d75f298fd0645b0bbc4d77a8284851b.bindPopup(popup_007bbd0b4c124c91a28e30716388730e);
+
+            
+        
+    
+
+            var circle_marker_e45337327340461d8e7d1328e28d930d = L.circleMarker(
+                [40.752824829236076,-73.90606508052358],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_424b17b5f96944b8908abf075406a3ff = L.popup({maxWidth: '300'});
+
+            
+                var html_dc228b2d3cd5419a994ed7bd4959117c = $('<div id="html_dc228b2d3cd5419a994ed7bd4959117c" style="width: 100.0%; height: 100.0%;">Northern Blvd</div>')[0];
+                popup_424b17b5f96944b8908abf075406a3ff.setContent(html_dc228b2d3cd5419a994ed7bd4959117c);
+            
+
+            circle_marker_e45337327340461d8e7d1328e28d930d.bindPopup(popup_424b17b5f96944b8908abf075406a3ff);
+
+            
+        
+    
+            var regular_polygon_marker_ef7da8cb061d43ee90a37fb83802ed69 = new L.RegularPolygonMarker(
+                new L.LatLng(40.582627,-73.968733),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'RoyalBlue',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: 'RoyalBlue',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7
+                    }
+                )
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_e18151907858444f854f0182b5109d36 = L.popup({maxWidth: '300'});
+
+            
+                var html_463be3988c51444b9007fb44b778c7a9 = $('<div id="html_463be3988c51444b9007fb44b778c7a9" style="width: 100.0%; height: 100.0%;">Abraham Lincoln High School</div>')[0];
+                popup_e18151907858444f854f0182b5109d36.setContent(html_463be3988c51444b9007fb44b778c7a9);
+            
+
+            regular_polygon_marker_ef7da8cb061d43ee90a37fb83802ed69.bindPopup(popup_e18151907858444f854f0182b5109d36);
+
+            
+        
+    
+
+            var circle_marker_5f514f22def44c4f9163bc59c6864ee3 = L.circleMarker(
+                [40.57631166708091,-73.96850099975177],
+                {
+                    color: 'FireBrick',
+                    weight: 2,
+                    fillColor: 'FireBrick',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_34e7b632230441ed83f61af61eb4cd6a);
+            
+    
+            var popup_17591ebec1904172a4932c4f9c6b6bc5 = L.popup({maxWidth: '300'});
+
+            
+                var html_5a02174adc034534946ac0b062af12f5 = $('<div id="html_5a02174adc034534946ac0b062af12f5" style="width: 100.0%; height: 100.0%;">Ocean Pkwy</div>')[0];
+                popup_17591ebec1904172a4932c4f9c6b6bc5.setContent(html_5a02174adc034534946ac0b062af12f5);
+            
+
+            circle_marker_5f514f22def44c4f9163bc59c6864ee3.bindPopup(popup_17591ebec1904172a4932c4f9c6b6bc5);
+
+            
+        
+</script>
